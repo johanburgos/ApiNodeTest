@@ -1,9 +1,9 @@
 //create express api rest with endpoint transaccions
 const express = require('express');
 const app = express();
-const port = 3005;
+const port = 80;
 
-app.post('/transaccions', (req, res) => {
+app.post('/transaccions/:idProduct', (req, res) => {
     //print body and get params
     console.log("Body: ");
     console.log(req.body);
