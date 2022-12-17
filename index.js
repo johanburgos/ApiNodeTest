@@ -13,8 +13,13 @@ app.get('/transaccions', (req, res) => {
     //qeuery params
     console.log("Query: ");
     console.log(req.query);
-    res.send('Hello World!');
-    }
+    res.send({
+        message: 'Hello World!',
+        body: req.body,
+        params: req.params,
+        query: req.query
+    });
+}
 );
 
 
