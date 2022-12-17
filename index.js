@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const port = 3005;
 
-app.get('/transaccions', (req, res) => {
+app.post('/transaccions', (req, res) => {
     //print body and get params
     console.log("Body: ");
     console.log(req.body);
