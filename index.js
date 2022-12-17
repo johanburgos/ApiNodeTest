@@ -10,6 +10,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.post('/transaccions/:idProduct', (req, res) => {
+    console.log("NEW REQUESTTTTTTTTTT")
+    //print body and get params
+    console.log("Body: ");
+    console.log(req.body);
+    //get params
+    console.log("Params: ");
+    console.log(req.params);
+    //qeuery params
+    console.log("Query: ");
+    console.log(req.query);
     res.send({
         message: 'Hello World!',
         body: req.body,
